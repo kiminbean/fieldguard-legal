@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>የግላዊነት ፖሊሲ - FieldGuard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Nyala', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 2; color: #333; background: #fff; }
+        .header { background: #2e7d32; color: white; padding: 40px 20px; text-align: center; }
+        .header h1 { font-size: 2rem; margin-bottom: 8px; }
+        .header p { opacity: 0.9; }
+        .content { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h2 { color: #2e7d32; margin: 30px 0 15px; padding-bottom: 8px; border-bottom: 2px solid #e8f5e9; }
+        h3 { color: #388e3c; margin: 20px 0 10px; }
+        p, li { margin-bottom: 12px; }
+        ul { padding-left: 24px; }
+        .update { color: #666; font-size: 0.9rem; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; }
+        a { color: #1976d2; }
+        .back { display: inline-block; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>የግላዊነት ፖሊሲ</h1>
+        <p>FieldGuard - በAI የሰብል በሽታ ምርመራ</p>
+    </div>
+    <div class="content">
+        <a href="index.html" class="back">&larr; ተመለስ</a>
+
+        <h2>1. የምንሰበስበው መረጃ</h2>
+        
+        <h3>1.1 እርስዎ የሚያቀርቡት መረጃ</h3>
+        <ul>
+            <li><strong>የመለያ መረጃ:</strong> በGoogle ሲገቡ፣ ስምዎን፣ የኢሜይል አድራሻዎን እና የመገለጫ ፎቶዎን እንቀበላለን።</li>
+            <li><strong>የእፅዋት ምስሎች:</strong> ለበሽታ ምርመራ የሚወስዷቸው ፎቶዎች በመሳሪያዎ ላይ ይሰራሉ እና በአማራጭ በደመናችን ላይ ይቀመጣሉ።</li>
+            <li><strong>የአካባቢ ውሂብ:</strong> በእርስዎ ፈቃድ፣ ለአካባቢዎ የተለየ የግብርና ምክሮችን ለመስጠት አካባቢን እንሰበስባለን።</li>
+            <li><strong>የማህበረሰብ ልጥፎች:</strong> በማህበረሰብ መድረኮቻችን ላይ የሚለጥፉት ይዘት።</li>
+        </ul>
+
+        <h3>1.2 በራስ-ሰር የሚሰበሰብ መረጃ</h3>
+        <ul>
+            <li><strong>የመሳሪያ መረጃ:</strong> የመሳሪያ አይነት፣ ኦፕሬቲንግ ሲስተም እና የመተግበሪያ ስሪት።</li>
+            <li><strong>የአጠቃቀም ውሂብ:</strong> መተግበሪያውን እንዴት እንደሚጠቀሙ (ጥቅም ላይ የዋሉ ባህሪያት፣ የምርመራ ታሪክ)።</li>
+            <li><strong>የብልሽት ሪፖርቶች:</strong> መተግበሪያው ስህተቶች ሲያጋጥሙት የቴክኒክ ውሂብ።</li>
+        </ul>
+
+        <h2>2. መረጃዎን እንዴት እንደምንጠቀም</h2>
+        <ul>
+            <li>በAI የተደገፈ የሰብል በሽታ ምርመራ መስጠት</li>
+            <li>በአካባቢዎ እና በሰብሎችዎ ላይ ተመስርተው የግብርና ምክሮችን ማበጀት</li>
+            <li>የማሽን ትምህርት ሞዴሎቻችንን ማሻሻል (ስማቸው ያልተገለጸ ውሂብ ብቻ)</li>
+            <li>ስለ መተግበሪያ ባህሪያት እና የግብርና ማስጠንቀቂያዎች ጠቃሚ ዝማኔዎችን መላክ</li>
+            <li>የደንበኛ ድጋፍ መስጠት</li>
+        </ul>
+
+        <h2>3. የውሂብ ማከማቻ እና ደህንነት</h2>
+        <ul>
+            <li><strong>በመሳሪያ ላይ ማካሄድ:</strong> የበሽታ ማወቂያ ሙሉ በሙሉ በመሳሪያዎ ላይ በመሳሪያ ML በመጠቀም ይሰራል።</li>
+            <li><strong>የደመና ማከማቻ:</strong> የምርመራ ታሪክዎ እና የመለያ ውሂብ በFirebase (Google Cloud) ላይ በደህንነት ይቀመጣሉ።</li>
+            <li><strong>ምስጠራ:</strong> ሁሉም ውሂብ በመጓጓዣ ጊዜ (TLS) እና በእረፍት ጊዜ ተመስጥሯል።</li>
+            <li><strong>የውሂብ ማቆየት:</strong> መለያዎ ንቁ ሳለ ውሂብዎን እናቆያለን። በማንኛውም ጊዜ መሰረዝ መጠየቅ ይችላሉ።</li>
+        </ul>
+
+        <h2>4. የውሂብ መጋራት</h2>
+        <p>የግል መረጃዎን አንሸጥም። ውሂብ መጋራት የምንችለው ከእነዚህ ጋር ነው:</p>
+        <ul>
+            <li><strong>የአገልግሎት አቅራቢዎች:</strong> Firebase (ማረጋገጫ፣ ማከማቻ)፣ Google Analytics (የአጠቃቀም ትንታኔ)</li>
+            <li><strong>የህግ መስፈርቶች:</strong> በህግ ሲጠየቅ ወይም መብቶቻችንን ለመጠበቅ</li>
+            <li><strong>የምርምር አጋሮች:</strong> ስማቸው ያልተገለጸ፣ የተሰበሰበ ውሂብ ብቻ፣ ለግብርና ምርምር</li>
+        </ul>
+
+        <h2>5. መብቶችዎ</h2>
+        <p>የሚከተሉት መብቶች አሉዎት:</p>
+        <ul>
+            <li>የግል ውሂብዎን ማግኘት</li>
+            <li>ትክክል ያልሆነ ውሂብ ማስተካከል</li>
+            <li>መለያዎን እና ተዛማጅ ውሂብን መሰረዝ</li>
+            <li>የምርመራ ታሪክዎን ወደ ውጭ መላክ</li>
+            <li>ከትንታኔ ስብስብ መውጣት</li>
+        </ul>
+
+        <h2>6. የልጆች ግላዊነት</h2>
+        <p>FieldGuard ከ13 ዓመት በታች ለሆኑ ልጆች አይደለም። ከልጆች ውሂብ ሆን ብለን አንሰበስብም።</p>
+
+        <h2>7. በዚህ ፖሊሲ ላይ ለውጦች</h2>
+        <p>ይህንን ፖሊሲ በየጊዜው ልናዘምን እንችላለን። ስለ ጉልህ ለውጦች በመተግበሪያው በኩል እናሳውቅዎታለን።</p>
+
+        <h2>8. ያግኙን</h2>
+        <p>ከግላዊነት ጋር የተያያዙ ጥያቄዎችን ያግኙን:</p>
+        <p>ኢሜይል: privacy@fieldguard.app</p>
+
+        <p class="update">የመጨረሻ ዝማኔ: ጃንዋሪ 2025</p>
+    </div>
+</body>
+</html>
